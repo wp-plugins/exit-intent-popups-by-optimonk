@@ -11,7 +11,6 @@
 if (!session_start()) {
     session_start();
 }
-require_once(dirname(__FILE__) . "/optimonk-updater.php");
 require_once(dirname(__FILE__) . "/optimonk-admin.php");
 require_once(dirname(__FILE__) . "/optimonk-front.php");
 
