@@ -13,7 +13,7 @@ Turn your abandoning visitors into customers with our award-winning tool. Engage
 
 Convert more visitors to buyers - this is what OptiMonk can help you with. Check out how OptiMonk works:
 
-<iframe src="https://fast.wistia.net/embed/iframe/7mtofskcku" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="532" height="299"></iframe><script src="https://fast.wistia.net/assets/external/E-v1.js" async></script>
+<p><div class='video'><iframe src="https://fast.wistia.net/embed/iframe/7mtofskcku" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="532" height="299"></iframe><script src="https://fast.wistia.net/assets/external/E-v1.js" async></script></div></p>
 
 Grab your visitor's attention just before they leave
 
