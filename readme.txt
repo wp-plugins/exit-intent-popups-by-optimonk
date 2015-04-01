@@ -43,12 +43,12 @@ Advanced features:
 
 Here are a few case studies you might be interested in:
 
-*   A B2B Security Startup was able to increase the number of free trials by 65% - download
-*   An ebike store was able to increase their subscription rate by 329% - download
-*   A toy retailer was able to increase its revenue by 26,8% - download
-*   A marketing guru was able to increase its subscription rate by 48% - download
-*   An adult store was able to decrease its cart-abandonment rate by 27.6% - download
-*   A marketing agency was able to increase the number of leads by 45% - download
+*   A B2B Security Startup was able to increase the number of free trials by 65% - <a href="http://www.optimonk.com/case_study/case_study_bitninja.pdf">download</a>
+*   An ebike store was able to increase their subscription rate by 329% - <a href="http://www.optimonk.com/case_study/case_study_ambringa.pdf">download</a>
+*   A toy retailer was able to increase its revenue by 26,8% - <a href="http://www.optimonk.com/case_study/case_study_reflexshop.pdf">download</a>
+*   A marketing guru was able to increase its subscription rate by 48% - <a href="http://www.optimonk.com/case_study/case_study_marketingcommando.pdf">download</a>
+*   An adult store was able to decrease its cart-abandonment rate by 27.6% - <a href="http://www.optimonk.com/case_study/case_study_vagyaim.pdf">download</a>
+*   A marketing agency was able to increase the number of leads by 45% - <a href="http://www.optimonk.com/case_study/case_study_marketing112.pdf">download</a>
 
 
 == Installation ==
