@@ -1,4 +1,5 @@
 === Exit-Intent Popups by OptiMonk ===
+Contributors: OptiMonk
 Tags: exit-intent popup, exit intent pop-up, call to action, conversion, conversion rate optimization, CRO, email capture, exit popup, exit-intent, landing page, lead capture, lead conversion, popup, wp email capture
 Requires at least: 2.8.0
 Tested up to: 4.1.1
