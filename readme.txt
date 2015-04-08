@@ -50,6 +50,7 @@ Here are a few case studies you might be interested in:
 *   An adult store was able to decrease its cart-abandonment rate by 27.6% - <a href="http://www.optimonk.com/case_study/case_study_vagyaim.pdf">download</a>
 *   A marketing agency was able to increase the number of leads by 45% - <a href="http://www.optimonk.com/case_study/case_study_marketing112.pdf">download</a>
 
+Try our absolutely free 14-day trial with our basic package and see how OptiMonk can get you more conversions. For more information on pricing and plans starting as low as $29 click <https://www.optimonk.com/#stage5">here</a>.
 
 == Installation ==
 
