@@ -7,7 +7,7 @@ Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Turn your abandoning visitors into customers with our award-winning tool. Engage them with a compelling offer and increase your sales.
+Turn your abandoning visitors into customers with our award-winning tool. Explore the possibilities and increase your sales with a 14-day free trial.
 
 == Description ==
 
