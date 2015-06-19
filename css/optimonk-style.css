@@ -7,3 +7,13 @@
 .form-table td, .form-table th {
     vertical-align: top;
 }
+
+.error, .updated {
+    margin-bottom: 10px !important;
+}
+
+.form-wrapper {
+    border: 1px solid #dedede;
+    padding: 10px;
+    background: #fff;
+}

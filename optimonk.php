@@ -4,10 +4,15 @@
   Plugin URI: http://wordpress.org/extend/plugins/optimonk/
   Description: OptiMonk is an exit-intent popup technology
   Author: OptiMonk
-  Version: 1.0.0
+  Version: 1.0.1
   Author URI: http://www.optimonk.com/
   License: GPLv2
 */
+
+if (!defined('ABSPATH')) {
+    die('');
+}
+
 if (!session_start()) {
     session_start();
 }

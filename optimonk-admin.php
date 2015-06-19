@@ -43,7 +43,7 @@ class OptiMonkAdmin
         return $links;
     }
 
-    public function redirectToSettingPage()
+    public static function redirectToSettingPage()
     {
         if (get_option('optiMonkDoActivationRedirect', false)) {
             delete_option('optiMonkDoActivationRedirect');
@@ -73,20 +73,33 @@ class OptiMonkAdmin
         if (!current_user_can('manage_options')) {
             wp_die(__('You do not have sufficient permissions to access this page.'));
         }
+
         wp_enqueue_style('optimonk-style', plugin_dir_url(__FILE__) . 'css/optimonk-style.css');
         $error = $this->getError();
-        $pluginDir = plugin_dir_url(self::$basePath);
+        $success = $this->getSuccessMessage();
+        unset($_SESSION['optiMonk']['error']);
+        unset($_SESSION['optiMonk']['success']);
+        $pluginDirUrl = plugin_dir_url(self::$basePath);
+        $pluginDirPath = plugin_dir_path(self::$basePath);
+        $domain = $this->getSalesPageLink();
 
         include(sprintf("%s/template/settings.php", dirname(__FILE__)));
     }
 
     public function postHandler()
     {
+        $error = array();
         if (!($accountId = (int) $_POST['optiMonk_accountId'])) {
-            $_SESSION['optiMonk']['error'] = __('Wrong account id!', 'optimonk');
-            wp_redirect(self::$pluginLink);
+            $error[] = __('Wrong account id!', 'optimonk');
         }
-        update_option('optiMonk_accountId', $accountId);
+
+        if (count($error)) {
+            $_SESSION['optiMonk']['error'] = $error;
+        } else {
+            $_SESSION['optiMonk']['success'] = __('Your data successfully updated!', 'optimonk');
+            update_option('optiMonk_accountId', $accountId);
+        }
+
         wp_redirect(self::$pluginLink);
     }
 
@@ -97,11 +110,45 @@ class OptiMonkAdmin
     {
         $error = array();
         if (isset($_SESSION['optiMonk']['error'])) {
-            $error[] = $_SESSION['optiMonk']['error'];
+            $error = $_SESSION['optiMonk']['error'];
+            unset($_SESSION['optiMonk']['error']);
         }
 
-        unset($_SESSION['optiMonk']);
-
         return $error;
+    }
+
+    protected function getSuccessMessage()
+    {
+        $success = '';
+        if (isset($_SESSION['optiMonk']['success'])) {
+            $success = __('Your data successfully updated', 'optimonk');
+        }
+        return $success;
+    }
+
+    /**
+     * @return string
+     */
+    protected function getSalesPageLink()
+    {
+        $accountId = get_option('optiMonk_accountId');
+        $analytics = '';
+        $locale = get_bloginfo('language');
+        $domain = 'https://www.optimonk.';
+        $tld = 'com';
+        switch ($locale) {
+            case 'hu-HU':
+                $tld = 'hu';
+                break;
+            case 'de-DE':
+                $tld = 'de';
+                break;
+        }
+
+        if ($accountId) {
+            $analytics = '/?utm_source=logo&utm_medium=wordpress_plugin&utm_campaign=' . $accountId;
+        }
+
+        return $domain . $tld . $analytics;
     }
 }
